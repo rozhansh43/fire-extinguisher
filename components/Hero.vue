@@ -1,19 +1,20 @@
 <template>
     <b-container class="Hero">
-        <div class="text-container">
-            <h1 class="header">
-                Find your Fire Extinguisher
-            </h1>
+        <b-row>
+            <b-col>
+                <h1 class="header">
+                    Find your Fire Extinguisher
+                </h1>
 
-            <p class="snippet">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iusto illum quidem asperiores, cum nisi aperiam eius ipsa sapiente odit!
-            </p>
+                <p class="snippet">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iusto illum quidem asperiores, cum nisi aperiam eius ipsa sapiente odit!
+                </p>
+            </b-col>
 
-            <b-button class="button btn">
-                Start Looking
-            </b-button>
-        </div>
-        <img class="image" src="~assets/svg/fire-extinguisher.svg" alt="fire extinguisher">
+            <b-col>
+                <img class="image" src="~assets/svg/fire-extinguisher.svg" alt="fire extinguisher">
+            </b-col>
+        </b-row>
     </b-container>
 </template>
 
@@ -23,15 +24,6 @@
 </script>
 
 <style scoped>
-    .Hero {
-        height: 50vh;
-        position: relative;
-        display: flex;
-        padding: 5rem 0;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
     .text-container {
         width: 50%;
         margin-top: 4rem;
