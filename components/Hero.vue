@@ -1,5 +1,5 @@
 <template>
-    <b-container class="Hero">
+    <b-container>
         <b-row>
             <b-col>
                 <h1 class="header">
@@ -19,8 +19,9 @@
 </template>
 
 <script>
-    export default {
-    }
+export default {
+    name: 'Hero'
+}
 </script>
 
 <style scoped>
@@ -42,34 +43,5 @@
     .image {
         width: 27.5rem;
         margin-top: 2rem;
-    }
-
-    .overlay {
-        background: rgba(0, 0, 0, 0);
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-    }
-
-    .button {
-        padding: 1rem 4rem;
-        border-radius: 100rem;
-        background-color: rgb(231, 81, 43);
-        color: white;
-        width: 20rem;
-        font-weight: 700;
-        transition: 0.5s;
-    }
-
-    .button:hover {
-        width: 21.5rem;
-    }
-
-    @media (max-width: 500px) {
-        .Hero {
-            height: 40vh;
-
-        }
     }
 </style>

@@ -13,7 +13,7 @@
             <b-navbar-nav>
                 <b-nav-item >
                     <NuxtLink to="/products" class="nav-link">
-                    Products 
+                     Products 
 
                     <span class="sr-only">
                         (current)
@@ -37,16 +37,6 @@
 
 <script>
 export default {
-    name: 'nav'
+    name: 'Nav'
 }
 </script>
-
-<style scoped>
-    .padding {
-        padding: 1.5rem;
-        background-color: black
-    }
-    .nav-left {
-        margin-left: auto;
-    }
-</style>

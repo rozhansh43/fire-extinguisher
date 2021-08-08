@@ -1,6 +1,6 @@
 <template>
     <div class="item-container">
-        <img :src="require(`@/assets/images/${item.image}`)" alt="">
+        <img :src="require(`@/assets/images/${item.image}`)" :alt="item.title">
         <div class="text-container">
             <h4>
                 {{item.title}} 
