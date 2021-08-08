@@ -13,12 +13,12 @@
             <b-navbar-nav>
                 <b-nav-item >
                     <NuxtLink to="/products" class="nav-link">
-                     Products 
+                        Products 
 
-                    <span class="sr-only">
-                        (current)
-                    </span>
-                </NuxtLink>
+                        <span class="sr-only">
+                            (current)
+                        </span>
+                    </NuxtLink>
                 </b-nav-item>
 
                 <b-nav-item>
