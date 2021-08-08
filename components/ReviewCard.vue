@@ -5,7 +5,7 @@
         </div>
         <div class="text-container">
             <h6>
-                {{review.login.username}}
+                {{ review.login.username }}
             </h6>
 
             <p>

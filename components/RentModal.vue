@@ -13,13 +13,6 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quis soluta quia neque! Ea modi, a omnis eligendi enim ducimus asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, autem?
           </p>
         </div>
-
-        <vc-date-picker
-          :value="null"
-          color="indigo"
-          is-dark
-          is-range
-        />
       </div>
 
       <b-button class="mt-3" variant="outline-danger" block @click="() => {
@@ -34,7 +27,8 @@
 </template>
 
 <script>
-import {mapMutations} from "vuex"
+import { mapMutations } from "vuex"
+
   export default {
     props: ['product'],
     methods: {

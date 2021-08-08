@@ -3,9 +3,11 @@
         <h4 class="header">
             {{ cardsSection.title }}
         </h4>
+
         <p class="snippet" >
             {{ cardsSection.snippet }}
         </p>
+        
         <div class="cards-container">
             <LargeCard 
                 v-for="card in cardsSection.cards"
