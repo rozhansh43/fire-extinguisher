@@ -36,9 +36,9 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+    name: 'nav'
+}
 </script>
 
 <style scoped>

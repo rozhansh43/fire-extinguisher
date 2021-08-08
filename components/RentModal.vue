@@ -25,7 +25,9 @@
       <b-button class="mt-3" variant="outline-danger" block @click="() => {
         addItem(product.id)  
         hideModal()
-      }">Order
+        }"
+      >
+        Order
       </b-button>
     </b-modal>
   </div>

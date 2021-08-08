@@ -2,16 +2,21 @@
     <div class="item-container">
         <img :src="require(`@/assets/images/${item.image}`)" alt="">
         <div class="text-container">
-            <h4> {{item.title}} </h4>
-            <p> {{item.description}} </p>
+            <h4>
+                {{item.title}} 
+            </h4>
+
+            <p> 
+                {{item.description}}
+             </p>
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        props: ['item']
-    }
+export default {
+    props: ['item']
+}
 </script>
 
 <style scoped>

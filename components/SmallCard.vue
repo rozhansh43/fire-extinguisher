@@ -5,9 +5,10 @@
 </template>
 
 <script>
-    export default {
-        props: ["card"]
-    }
+export default {
+    name: 'smallCard',
+    props: ["card"]
+}
 </script>
 
 <style scoped>

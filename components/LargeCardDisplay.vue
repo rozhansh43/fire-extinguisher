@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <b-container>
         <h4 class="header">
             {{ cardsSection.title }}
         </h4>
@@ -7,25 +7,22 @@
             {{ cardsSection.snippet }}
         </p>
         <div class="cards-container">
-             <LargeCard 
+            <LargeCard 
                 v-for="card in cardsSection.cards"
                 :key="card.image"
                 :card="card"
             />
         </div>
-    </div>
+    </b-container>
 </template>
 
 <script>
-    export default {
-        props: ['cardsSection']
-    }
+export default {
+    props: ['cardsSection']
+}
 </script>
 
 <style scoped>
-.container {
-    margin-top: 2rem;
-}
     .header {
         font-weight: 700;
         font-size: 1.5rem;

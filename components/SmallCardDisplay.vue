@@ -1,6 +1,9 @@
 <template>
-    <b-container class="container">
-        <h3 class="header">{{ cardsSection.title }}</h3>
+    <b-container>
+        <h3 class="header">
+            {{ cardsSection.title }}
+        </h3>
+
         <div class="card-container">
             <SmallCard 
                 v-for="card in cardsSection.cards"
@@ -12,17 +15,13 @@
 </template>
 
 <script>
-    export default {
-        props: ["cardsSection"]
-    }
+export default {
+    name: 'smallCardDispay',
+    props: ["cardsSection"]
+}
 </script>
 
 <style scoped>
-
-    .container {
-        padding: 2rem 0
-    }
-
     .header {
         font-weight: 700;
         font-size: 1.5rem;
