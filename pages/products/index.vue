@@ -1,16 +1,17 @@
 <template>
-    <div class="container">
+    <b-container>
         <LargeCardDisplay
             v-for="cardInfo in largeCardInfo.slice(0,1)"
             :key="cardInfo.id"
             :cardsSection="cardInfo"
         />
+        
         <SmallCardDisplay 
             v-for="cardInfo in smallCardSections"
             :key="cardInfo.id"
             :cardsSection="cardInfo"
         /> 
-    </div>
+    </b-container>
 </template>
 
 <script>
@@ -19,7 +20,7 @@ import { largeCardSections, smallCardSections } from "@/assets/data.js"
         data(){
             return {
                 largeCardInfo: largeCardSections,
-                smallCardSections: smallCardSections
+                smallCardSections
             }
         }
     }

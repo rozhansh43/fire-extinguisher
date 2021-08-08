@@ -3,8 +3,14 @@
         <div class="hero-container">
             <img :src="require(`@/assets/images/${product.image}`)" alt="" class="image">
             <div class="info-box">
-                <h1>{{ product.title }}</h1>
-                <p class="snippet">{{ product.snippet }}</p>
+                <h1>
+                    {{ product.title }}
+                </h1>
+
+                <p class="snippet">
+                    {{ product.snippet }}
+                </p>
+
                 <RentModal 
                     :product="product"
                 />
@@ -12,20 +18,40 @@
         </div>
         <div class="whats-included-container">
             <div class="included-container">
-                <h6>Super Effective</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+                <h6>
+                    Super Effective
+                </h6>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+                </p>
             </div>
             <div class="included-container">
-                <h6>Clean & Tidy</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+                <h6>
+                    Clean  Tidy
+                </h6>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+                </p>
             </div>
             <div class="included-container">
-                <h6>Cancel Anytime</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+                <h6>
+                    Cancel Anytime
+                </h6>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+                </p>
             </div>
             <div class="included-container">
-                <h6>Satisfaction Guaranteed</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+                <h6>
+                    Satisfaction Guaranteed
+                </h6>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+                </p>
             </div>        
         </div>
         <div class="description-container">
@@ -41,14 +67,14 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-    export default {
-        computed: {
-            product() {
-                return this.$store.getters.getProductById(this.$route.params.id);
-            }
+
+export default {
+    computed: {
+        product() {
+            return this.$store.getters.getProductById(this.$route.params.id)
         }
     }
+}
 </script>
 
 <style scoped>
@@ -119,9 +145,4 @@ import { mapGetters } from 'vuex'
         margin-top: 3rem;
         color: grey
     }
-
-    .padding {
-        padding: 10rem 0
-    }
-
 </style>
