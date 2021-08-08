@@ -1,22 +1,11 @@
 <template>
-    <div class="container">
+    <b-container>
         <PageNotFound />
-    </div>
+    </b-container>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+    name: 'error'
+}
 </script>
-
-<style scoped>
-    .container {
-        padding: 5rem 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 70vh;
-    }
-
-</style>

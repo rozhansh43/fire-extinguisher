@@ -2,13 +2,18 @@
 
 <template>
   <div>
-    <b-button id="show-btn" @click="showModal">Rent</b-button>
+    <b-button id="show-btn" @click="showModal">
+      Rent
+    </b-button>
 
     <b-modal ref="my-modal" hide-footer title="Using Component Methods">
       <div class="calendar-container">
         <div class="text-container">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quis soluta quia neque! Ea modi, a omnis eligendi enim ducimus asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, autem?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quis soluta quia neque! Ea modi, a omnis eligendi enim ducimus asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, autem?
+          </p>
         </div>
+
         <vc-date-picker
           :value="null"
           color="indigo"
@@ -16,10 +21,12 @@
           is-range
         />
       </div>
+
       <b-button class="mt-3" variant="outline-danger" block @click="() => {
         addItem(product.id)  
         hideModal()
-      }">Order</b-button>
+      }">Order
+      </b-button>
     </b-modal>
   </div>
 </template>

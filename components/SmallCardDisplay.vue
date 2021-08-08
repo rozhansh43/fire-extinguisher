@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <b-container class="container">
         <h3 class="header">{{ cardsSection.title }}</h3>
         <div class="card-container">
             <SmallCard 
@@ -8,7 +8,7 @@
                 :card="card"
             />
         </div>
-    </div>
+    </b-container>
 </template>
 
 <script>
