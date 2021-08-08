@@ -38,16 +38,16 @@ import {mapMutations} from "vuex"
   export default {
     props: ['product'],
     methods: {
-      showModal() {
+      showModal () {
         this.$refs['my-modal'].show()
       },
-      hideModal() {
+      hideModal () {
         this.$refs['my-modal'].hide()
       },
-      toggleModal() {
+      toggleModal () {
         this.$refs['my-modal'].toggle('#toggle-btn')
       },
-      ...mapMutations(['addItem']),
+      ...mapMutations (['addItem']),
     }
   }
 </script>

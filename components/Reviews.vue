@@ -17,12 +17,12 @@
 <script>
 export default {
     name: 'reviews',
-    data(){
+    data () {
         return {
             reviewers: []
         }
     },
-    async fetch() {
+    async fetch () {
         this.reviewers = await fetch('https://randomuser.me/api/?results=5').then((res) => res.json())
     }
 }
